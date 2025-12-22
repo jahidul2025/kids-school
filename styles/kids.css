@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.quicksand-font {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Styles for the navigation bar */
+
+.SCHOOL {
+    color: rgba(17, 17, 17, 1);
+    font-size: 2rem;
+}
+
+.logo {
+    width: 62px;
+    height: 62px;
+}
+
+.logo-school {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-item {
+    list-style: none;
+}
+
+.anchor {
+    text-decoration: none;
+
+}
+
+.list-items {
+    display: flex;
+    gap: 32px;
+}
+
+#home {
+    color: rgba(254, 163, 1, 1);
+    font-size: 1.25rem;
+}
+
+#about {
+    color: rgba(1, 172, 253, 1);
+    font-size: 1.25rem;
+}
+
+#facilities {
+    color: rgba(5, 212, 223, 1);
+    font-size: 1.25rem;
+}
+
+#admission {
+    color: rgba(93, 88, 239, 1);
+    font-size: 1.25rem;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.btn-contact {
+    background-color: rgba(254, 163, 1, 1);
+    border-radius: 12px;
+    padding: 10px;
+    width: 197px;
+    height: 50px;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+/* media queries for phone */
+@media screen and (max-width: 576px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    .list-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .btn-contact-container{
+        display: none;
+    }
+}

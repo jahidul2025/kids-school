@@ -81,16 +81,71 @@
     cursor: pointer;
 }
 
+/* header section start */
+
+.header-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(17, 17, 17, 1);
+}
+
+.empowering {
+    color: rgba(254, 163, 1, 1);
+}
+
+.towards-vision {
+    color: rgba(1, 172, 253, 1);
+}
+
+.header-discription {
+    font-size: 1.25rem;
+    color: rgba(17, 17, 17, 1);
+}
+
+.btn-header {
+    border-radius: 12px;
+    background: var(--Black, rgba(17, 17, 17, 1));
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    padding: 10px 47px;
+}
+
+
+.img-header{
+    width: 100%;
+}
+
+.header{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+}
+
+
 /* media queries for phone */
 @media screen and (max-width: 576px) {
-    .nav-bar{
+    .nav-bar {
         flex-direction: column;
     }
+
     .list-items {
         flex-direction: column;
         gap: 10px;
     }
-    .btn-contact-container{
+
+    .btn-contact-container {
         display: none;
+    }
+
+    /* header section start */
+
+    .header{
+        flex-direction: column-reverse;
+    }
+
+    .header-text{
+        text-align: center;
     }
 }

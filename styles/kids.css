@@ -188,10 +188,11 @@
     margin-top: 40px;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
+
 .card {
     text-align: center;
 }
@@ -226,15 +227,121 @@
 }
 
 
-.slide-btn{
+.slide-btn {
     text-align: center;
     margin-top: 80px;
 }
 
-.right-Next{
+.right-Next,
+.left-Next {
     cursor: pointer;
 }
 
+/* story section start */
+
+
+
+.story-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.story-one {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color: white;
+}
+
+.story-one-png {
+    border-radius: 16px 16px 0px 0px;
+    width: 100%;
+}
+
+.btn-story-one {
+    border-radius: 47.93px;
+    background: rgba(60, 216, 232, 1);
+    border: none;
+    padding: 14px 18px;
+    color: white;
+    font-size: 1rem;
+    margin-top: -100px;
+}
+
+
+.story-one {
+    max-width: 540px;
+    border-radius: 16px;
+    margin-top: 80px;
+}
+
+
+.story-one-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.story-one-subtitle {
+    color: rgba(102, 102, 102, 1);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.story-one-text-div {
+    padding-left: 38px;
+}
+
+.our-storyes {
+    display: flex;
+    gap: 20px;
+}
+
+.story-two-text-div {
+    border-radius: 16px;
+}
+
+.story-two-png {
+    border-radius: 16px 16px 0px 0px;
+
+}
+
+.story-two-btn {
+    border-radius: 47.93px;
+    background: rgba(149, 178, 38, 1);
+    border: none;
+    padding: 14px 18px;
+    color: white;
+    font-size: 1rem;
+    margin-top: -100px;
+}
+
+.story-two-text-inside-div {
+    padding-left: 38px;
+}
+
+.second-story-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.story-one-png {
+    width: 100%;
+}
+
+#view-all{
+    text-align: center;
+}
+
+.view-all-btn-div{
+    text-align: center;
+    margin-top: 80px;
+}
 
 /* media queries for phone */
 @media screen and (max-width: 576px) {
@@ -272,7 +379,37 @@
         flex-direction: column;
     }
 
-    .slide-btn{
+    .slide-btn {
+        display: none;
+    }
+
+    .story-title {
+        font-size: 1.6rem;
+    }
+
+    .our-storyes {
+        flex-direction: column;
+    }
+
+    .second-story-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-two-png {
+        width: 173.27px;
+        height: 105.39px;
+    }
+
+    .story-two-btn {
+        width: 103.91px;
+        height: 22.83px;
+    }
+
+    .story-discription{
+        font-size: 0.8rem;
+    }
+
+    .first-story-container{
         display: none;
     }
 }

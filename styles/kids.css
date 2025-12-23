@@ -100,6 +100,8 @@
 .header-discription {
     font-size: 1.25rem;
     color: rgba(17, 17, 17, 1);
+    margin-top: 24px;
+
 }
 
 .btn-header {
@@ -109,18 +111,128 @@
     color: rgba(255, 255, 255, 1);
     font-weight: 700;
     padding: 10px 47px;
+    margin-top: 24px;
+    border: none;
+    cursor: pointer;
 }
 
 
-.img-header{
+.img-header {
     width: 100%;
 }
 
-.header{
+.header {
     max-width: 1160px;
     margin: 0 auto;
     display: flex;
     gap: 50px;
+    margin-top: 34px;
+}
+
+
+/* main section start */
+
+.main {
+    max-width: 1160px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+}
+
+
+.main-standard-title {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(32, 32, 32, 1);
+}
+
+.card-discription {
+    color: rgba(128, 128, 128, 1);
+    font-size: 0.9rem;
+}
+
+.card-btn-one {
+    background-color: none;
+    color: rgba(100, 200, 255, 1);
+    border: none;
+}
+
+.card-btn-two {
+    background-color: none;
+    color: rgba(240, 170, 0, 1);
+    border: none;
+}
+
+.card-btn-three {
+    background-color: none;
+    color: rgba(135, 0, 255, 1);
+    border: none;
+}
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+
+}
+
+.card-section {
+    margin-top: 40px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.card {
+    text-align: center;
+}
+
+
+#card-one {
+    border: 0.94px solid rgba(222, 245, 255, 1);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.29578971862793px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgba(222, 245, 255, 1), rgba(255, 255, 255, 0) 40%), rgba(255, 255, 255, 1);
+}
+
+#card-two {
+    border: 0.94px solid rgba(255, 244, 220, 1);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.29578971862793px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgba(255, 244, 220, 1), rgba(255, 255, 255, 0) 40%), rgba(255, 255, 255, 1);
+}
+
+#card-three {
+    border: 0.94px solid rgba(242, 232, 255, 1);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.29578971862793px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgba(238, 225, 255, 1), rgba(255, 255, 255, 0) 40%), rgba(255, 255, 255, 1);
+}
+
+
+.card-section {
+    background: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.slide-btn{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.right-Next{
+    cursor: pointer;
 }
 
 
@@ -141,11 +253,26 @@
 
     /* header section start */
 
-    .header{
+    .header {
         flex-direction: column-reverse;
     }
 
-    .header-text{
+    .header-text {
         text-align: center;
+    }
+
+    /* main section start */
+
+
+    .main-standard-title {
+        font-size: 1.6rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .slide-btn{
+        display: none;
     }
 }
